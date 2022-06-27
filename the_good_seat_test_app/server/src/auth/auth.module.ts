@@ -6,10 +6,10 @@ import { AuthController } from './auth.controller';
 @Module({
     imports: [
         HttpModule.register({
-            baseURL: 'https://apistaging.thegoodseat.fr',
+            baseURL: process.env.BASE_URL,
             headers: {
-                'x-api-key': 'wkcrqtCH1L7DHUDTyg35R47PLUnBBx9B4nsgJEgw',
-                aggregatorCode: 'poc-tgs',
+                'x-api-key': process.env.API_KEY,
+                aggregatorCode: process.env.AGGREGATOR_CODE,
 
             },
         })],
