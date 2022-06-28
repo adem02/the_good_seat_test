@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { HttpModule } from '@nestjs/axios';
-import { AuthService } from './auth.service';
-import { AuthController } from './auth.controller';
+import { OffersController } from './offer.controller';
+import { OffersService } from './offer.service';
 
 @Module({
     imports: [
@@ -12,8 +12,8 @@ import { AuthController } from './auth.controller';
                 aggregatorCode: 'poc-tgs',
             },
         })],
-    controllers: [AuthController],
-    providers: [AuthService],
+    controllers: [OffersController],
+    providers: [OffersService],
 })
 
-export class AuthModule { }
+export class OffersModule { }

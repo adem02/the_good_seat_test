@@ -1,0 +1,8 @@
+.search-ride-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form_control {
+    margin: 0 0.5em;
+}
